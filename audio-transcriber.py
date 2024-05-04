@@ -13,7 +13,7 @@ st.sidebar.markdown("**Note**: Processing can take up to 5 mins, please be patie
 model = whisper.load_model("base")
 st.text("Whisper Model Loaded")
 st.sidebar.info("Transcribing audio...")        
-result = model.transcribe("https://firebasestorage.googleapis.com/v0/b/daily-devotion-72b13.appspot.com/o/devotion_preaching%2Foutput4.mp3?alt=media&token=f68e59d2-eecc-4b2b-85f1-6e4eb44f707b")
+result = model.transcribe("https://firebasestorage.googleapis.com/v0/b/daily-devotion-72b13.appspot.com/o/devotion_preaching%2F13TH%20APRIL%202024_daily_devotion.mp4?alt=media&token=108722cf-3c27-41ed-966d-f0c60044d2fd")
         
 st.sidebar.success("Transcription Complete")
 st.markdown(result['text'])
